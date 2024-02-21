@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-//file upload module
 
 const app = express();
 app.use(express.static(path.join(process.cwd(), '/public')));
@@ -19,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.get("*", (req, res) => {
     res.setHeader('Content-type', 'text/html');
-    file404 = fs.readFileSync(path.join(process.cwd(), 'notfound.html'));
+    let file404 = fs.readFileSync(path.join(process.cwd(), 'notfound.html'));
     res.write(file404, (err) => {
         if (err) throw err;
     });
