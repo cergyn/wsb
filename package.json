@@ -1,0 +1,14 @@
+{
+  "name": "wsb",
+  "version": "1.0.0",
+  "description": "Test BG without TLDs",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Celal Ergün",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
